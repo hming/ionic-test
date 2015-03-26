@@ -1,0 +1,14 @@
+<ion-view title="录音">
+	<ion-nav-buttons side="left">
+		<button menu-toggle="left" class="button button-icon icon ion-navicon-round"></button>
+	</ion-nav-buttons>
+	<ion-content class="has-header">
+		hello
+	</ion-content>
+	<div class="bar bar-footer pink">
+		<span>{{playTime}}</span>
+		<button class="button-icon icon {{start?'ion-stop':'ion-mic-a'}} " ng-click="start?stopRecord():recordAudio()"></button>
+		<span>{{time}}</span>|
+		<span>{{xx}}</span>
+	</div>
+</ion-view>
